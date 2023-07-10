@@ -27,7 +27,7 @@ main p{
     padding: 5%;
 }
 
-h1, h2, h3{
+h1, h2, h3, h4{
     color: rgb(50, 4, 94);
 }
 
@@ -44,9 +44,37 @@ header{
     display: inline-block;
     padding: 10px;
    }
+
+   main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   }
+
+   main img{
+    width: 100%;
+   }
+
+   a img{
+    width: 35%;
+   }
+
+   /*estilos de section*/
    
+   section .card{
+    background-color: rgb(94, 223, 255);
+    margin: 1rem;
+    padding: 1rem;
    
-   
+
+   }
+
+   iframe{
+    width: 100%;
+    
+
+   }
+
 
    menu-color{
     background-color: rgb(83, 212, 212);
@@ -81,3 +109,46 @@ footer{
     text-align: center;
 }
     
+
+/*propiedades de mediaqueries*/
+
+@media screen and (min-width:1024px) {
+    main{
+        display: grid;
+    }
+
+    .img-principal{
+        height: 90%;
+        width: 90%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    main .mapa{
+        height: 80%;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        display: inline-block;
+        overflow: auto;
+    }
+
+    main .img-nosotros{
+        width: 55%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    
+    }
+
+   nav .container-fluid{
+    height: auto;
+    width: 65%;
+    margin-right: 400px;
+   }
+
+
+}
